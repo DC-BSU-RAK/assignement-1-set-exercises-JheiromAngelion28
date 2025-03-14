@@ -97,8 +97,8 @@ section {
         transform: translateY(0);
     }
 }
-section:nth-of-type(1) { background: rgb(29, 34, 105); animation-delay: 0.2s; }
-section:nth-of-type(2) { background: rgb(137, 189, 186); animation-delay: 0.4s; }
-section:nth-of-type(3) { background: rgb(78, 123, 151); animation-delay: 0.6s; }
-section:nth-of-type(4) { background: rgb(156, 156, 94); animation-delay: 0.8s; }
-section:nth-of-type(5) { background: rgb(151, 25, 25); animation-delay: 1s; } 
+section:nth-of-type(1) { background: rgb(5, 240, 240); animation-delay: 0.2s; }
+section:nth-of-type(2) { background: rgb(8, 156, 201); animation-delay: 0.4s; }
+section:nth-of-type(3) { background: rgb(4, 123, 197); animation-delay: 0.6s; }
+section:nth-of-type(4) { background: rgb(5, 155, 135); animation-delay: 0.8s; }
+section:nth-of-type(5) { background: rgb(8, 32, 141); animation-delay: 1s; } 
