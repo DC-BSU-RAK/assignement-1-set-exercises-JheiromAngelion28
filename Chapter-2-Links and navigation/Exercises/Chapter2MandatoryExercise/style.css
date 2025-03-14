@@ -1,0 +1,104 @@
+/* To set the backround of color */
+main {
+    background-color: rgb(0, 0, 0);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* This ensures that the paraghraphs are centered */
+p {
+    height: 100px; 
+    width: 600px;
+    background-color: rgba(10, 115, 206, 0.178);
+    margin: 0 auto; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+
+/* This will set all of the text font and color */
+body {
+    font-family: Arial, sans-serif;
+    color: rgb(223, 214, 214);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Arial;
+}
+
+
+/* Title */
+h1 {
+    margin-top: 20px;
+    color: aliceblue;
+    font-family: Arial;
+    text-align: center;
+    font-size: 100px;
+}
+
+/* This sets the sidebare along with its color */
+.sidebar {
+    position: fixed;
+    width: 290px;
+    height: 100vh;
+    border-radius: 10px;
+    background: #948b8b;
+    padding-top: 20px;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background 0.3s ease-in-out;
+}
+
+.sidebar a:hover {
+    background: #000000;
+}
+
+
+
+/* This is the group that styles the sections of the website */
+section {
+    padding: 100px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 3.2rem;
+    opacity: 0;
+    transform: translateY(200px);
+    animation: fadeIn 1s forwards;
+    border-radius: 10px;
+    color: azure;
+    text-align: center;
+    font-family: Arial,;
+ 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+section:nth-of-type(1) { background: rgb(29, 34, 105); animation-delay: 0.2s; }
+section:nth-of-type(2) { background: rgb(137, 189, 186); animation-delay: 0.4s; }
+section:nth-of-type(3) { background: rgb(78, 123, 151); animation-delay: 0.6s; }
+section:nth-of-type(4) { background: rgb(156, 156, 94); animation-delay: 0.8s; }
+section:nth-of-type(5) { background: rgb(151, 25, 25); animation-delay: 1s; } 
