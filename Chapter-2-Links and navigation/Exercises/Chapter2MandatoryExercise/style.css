@@ -87,6 +87,7 @@ section {
  
 }
 
+/* This controls the animation sequence  */
 @keyframes fadeIn {
     from {
         opacity: 0;
