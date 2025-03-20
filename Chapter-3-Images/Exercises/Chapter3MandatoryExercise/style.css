@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    color: azure;
+    text-align: center;
+    font-size: 100px;
+    margin: 20px 0;
+}
+
+/* This determines the number of grid colomes and their gaps */
+.image-grid {
+    --gap: 16px;
+    --num-cols: 2;
+    
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    gap: var(--gap);
+    padding: var(--gap);
+}
+
+.image-grid > figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-grid > figure img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Ensures the entire image fits without cropping */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+figcaption {
+    color: azure;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 1024px) {
+    .image-grid { 
+        --num-cols: 1; /* Adjusts layout for smaller screens */
+    }
+}
+
+figcaption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px ;
+}
