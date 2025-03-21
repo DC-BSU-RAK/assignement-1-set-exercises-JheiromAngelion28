@@ -11,7 +11,7 @@ h1 {
     margin: 20px 0;
 }
 
-/* This determines the number of grid colomes and their gaps */
+/* This determines the number of grid columns and their gaps */
 .image-grid {
     --gap: 16px;
     --num-cols: 2;
@@ -53,4 +53,38 @@ figcaption {
 figcaption {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px ;
+    padding: 20px;
+}
+
+/* Adding effects to enhance the images  */
+/* These are the new effects that I am trying out */
+
+.image-grid > figure img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-grid > figure img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0px 8px rgb(236, 229, 229);
+}
+
+
+/* When the cursor floats above the image it will return to a colored state */
+.image-grid > figure img {
+    filter: grayscale(200%);
+}
+
+.image-grid > figure img:hover {
+    filter: grayscale(0%);
+}
+
+
+/* The same effect I have also placed in the captions */
+figcaption {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-grid > figure:hover figcaption {
+    opacity: 1;
 }

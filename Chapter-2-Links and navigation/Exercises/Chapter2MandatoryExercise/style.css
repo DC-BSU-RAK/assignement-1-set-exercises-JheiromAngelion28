@@ -1,7 +1,4 @@
-/* To set the backround of color */
-main {
-    background-color: rgb(0, 0, 0);
-}
+/* General Reset and Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -9,97 +6,116 @@ main {
     scroll-behavior: smooth;
 }
 
-/* This ensures that the paraghraphs are centered */
-p {
-    height: 100px; 
-    width: 600px;
-    background-color: rgba(10, 115, 206, 0.178);
-    margin: 0 auto; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    text-align: center; 
-}
-
-
-/* This will set all of the text font and color */
+/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    color: rgb(223, 214, 214);
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a1a; /* Dark background */
+    color: #ecf0f1; /* Light text color */
+    line-height: 1.6;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-family: Arial;
 }
 
-
-/* Title */
+/* Header Styling */
 h1 {
+    font-size: 4rem;
+    font-weight: 600;
     margin-top: 20px;
-    color: aliceblue;
-    font-family: Arial;
-    text-align: center;
-    font-size: 100px;
+    color: #3498db; /* Bright blue for the title */
 }
 
-/* This sets the sidebare along with its color */
+/* Sidebar Styling */
 .sidebar {
     position: fixed;
-    width: 290px;
+    width: 250px;
     height: 100vh;
-    border-radius: 10px;
-    background: #948b8b;
+    background: #2c3e50; /* Dark blue */
     padding-top: 20px;
     left: 0;
     top: 0;
-    z-index: 2;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar ul {
+    list-style: none;
 }
 
 .sidebar a {
     display: block;
-    color: white;
+    color: #ecf0f1;
     padding: 15px;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
     transition: background 0.3s ease-in-out;
 }
 
 .sidebar a:hover {
-    background: #000000;
+    background: #3498db; /* Bright blue on hover */
 }
 
+/* Main Content Styling */
+main {
+    margin-left: 250px; /* Offset for the sidebar */
+    padding: 20px;
+    width: calc(100% - 250px);
+}
 
-
-/* This is the group that styles the sections of the website */
 section {
-    padding: 100px;
+    padding: 50px;
     margin-bottom: 20px;
-    margin-top: 20px;
-    font-size: 3.2rem;
-    opacity: 0;
-    transform: translateY(200px);
-    animation: fadeIn 1s forwards;
+    background: #34495e; /* Darker blue for sections */
     border-radius: 10px;
-    color: azure;
-    text-align: center;
-    font-family: Arial,;
- 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
 }
 
-/* This controls the animation sequence  */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-section:nth-of-type(1) { background: rgb(5, 240, 240); animation-delay: 0.2s; }
-section:nth-of-type(2) { background: rgb(8, 156, 201); animation-delay: 0.4s; }
-section:nth-of-type(3) { background: rgb(4, 123, 197); animation-delay: 0.6s; }
-section:nth-of-type(4) { background: rgb(5, 155, 135); animation-delay: 0.8s; }
-section:nth-of-type(5) { background: rgb(8, 32, 141); animation-delay: 1s; } 
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #3498db; /* Bright blue for section titles */
+}
+
+section p {
+    font-size: 1.2rem;
+    color: #ecf0f1;
+}
+
+/* Styling For the footer*/
+footer {
+    background: #2c3e50;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #ecf0f1;
+    margin-bottom: 10px;
+}
+
+.steam-link {
+    display: inline-block;
+    background-color: #3498db; /* Bright blue */
+    color: #ecf0f1; /* Light text color */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.steam-link:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
