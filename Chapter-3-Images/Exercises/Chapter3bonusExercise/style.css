@@ -21,7 +21,7 @@ body {
 /* Targeting the different Divs for there respective effects */
 #A {
     background-color: #fffcfc; 
-    border: 2px solid #ab00ee; 
+    border: 5px solid #ab00ee; 
     box-shadow: 10px 5px 5px red;
     padding: 15px;
     margin: 10px;
@@ -29,7 +29,7 @@ body {
 
 #B {
     background-color: #ffffff; 
-    border: 2px solid #00ff00; 
+    border: 5px solid #00ff00; 
     /* Inset shadow effects for the inner parts of the square */
     box-shadow: inset 6px 10px 5px 1px;
     padding: 15px;
@@ -51,7 +51,7 @@ body {
 
 #D {
     background-color: #ffffff; 
-    border: 5px solid #ff0000; 
+    border: 5px solid #820505; 
     /* Using text shadow to create the double text effect */
     text-shadow:
     4px 4px 0 #000000; 
