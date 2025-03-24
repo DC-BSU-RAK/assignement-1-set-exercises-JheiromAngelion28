@@ -18,29 +18,30 @@ body {
 
 
 
-/* Targeting the different Divs for there respective effects */
+/* Targeting the different Divs for their respective effects */
 #A {
+    padding: 15px;
+    margin: 10px;
     background-color: #fffcfc; 
     border: 5px solid #ab00ee; 
     box-shadow: 10px 5px 5px red;
-    padding: 15px;
-    margin: 10px;
 }
 
 #B {
+    padding: 15px;
+    margin: 10px;
     background-color: #ffffff; 
     border: 5px solid #00ff00; 
     /* Inset shadow effects for the inner parts of the square */
     box-shadow: inset 6px 10px 5px 1px;
-    padding: 15px;
-    margin: 10px;
+   
 }
 
 #C {
     background-color: #ffffff; 
     border: 5px solid #ff6600; /* Inner border */
     box-shadow:
-    /* These ar ethe 3 layers of colors added  */
+    /* These are the 3 layers of colors added  */
         0 0 0 6px #003cff, 
         0 0 0 12px #fd0101, 
         0 0 0 18px #026117; 
